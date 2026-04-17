@@ -7,14 +7,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Phase 1 — Object Storage Foundation](#phase-1--object-storage-foundation)
-2. [Phase 2 — Tree Objects](#phase-2--tree-objects)
-3. [Phase 3 — The Index (Staging Area)](#phase-3--the-index-staging-area)
-4. [Phase 4 — Commits and History](#phase-4--commits-and-history)
-5. [Phase 5 — Branching and Checkout (Analysis)](#phase-5--branching-and-checkout-analysis)
-6. [Phase 6 — Garbage Collection (Analysis)](#phase-6--garbage-collection-analysis)
 
 ---
 
@@ -71,7 +63,7 @@ done
 xxd .pes/objects/XX/YYYY... | head -20
 ```
 
-![Raw Tree Object](screenshots/2B_xxd_tree.png)
+
 
 ---
 
@@ -92,7 +84,6 @@ xxd .pes/objects/XX/YYYY... | head -20
 
 > <img width="818" height="752" alt="Screenshot 2026-04-17 at 5 26 15 PM" src="https://github.com/user-attachments/assets/5d4cb039-f8a4-469b-a1ca-793c8ff8896f" />
 
-![Status Output](screenshots/3A_pes_status.png)
 
 ### Screenshot 3B — Index File Contents
 
@@ -115,20 +106,20 @@ xxd .pes/objects/XX/YYYY... | head -20
 ><img width="813" height="738" alt="Screenshot 2026-04-17 at 5 39 53 PM" src="https://github.com/user-attachments/assets/874bb0fd-ca99-4ad8-a49e-af18223f54af" />
 
 
-![Log Output](screenshots/4A_pes_log.png)
+
 
 ### Screenshot 4B — Object Store Growth
 
 > <img width="841" height="296" alt="Screenshot 2026-04-17 at 5 40 58 PM" src="https://github.com/user-attachments/assets/8ac116a2-b96f-4bef-b5f4-be9608017781" />
 
-![Object Store](screenshots/4B_find_pes.png)
+
 
 ### Screenshot 4C — Reference Chain
 
 > <img width="692" height="133" alt="Screenshot 2026-04-17 at 5 41 55 PM" src="https://github.com/user-attachments/assets/b2f7fcf1-9af1-40f8-bb2d-d13f36bf401d" />
 
 
-![Reference Chain](screenshots/4C_refs.png)
+
 
 ### Screenshot — Full Integration Test
 
@@ -136,7 +127,7 @@ xxd .pes/objects/XX/YYYY... | head -20
 
 ><img width="1077" height="819" alt="Screenshot 2026-04-17 at 5 42 40 PM" src="https://github.com/user-attachments/assets/9e5d039c-655c-47d8-a2cb-d8b8021e02ff" />
 
-![Integration Test](screenshots/integration_test.png)
+
 
 ---
 
