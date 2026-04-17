@@ -53,10 +53,11 @@
 `tree_from_index` builds a tree hierarchy from the staged index. It handles nested paths (e.g., `src/main.c` creates a `src` subtree), recursively writes all tree objects to the object store using `object_write`, and returns the root tree hash. Entries are sorted deterministically to ensure the same content always produces the same hash.
 
 ### Screenshot 2A — Phase 2 Tests Passing
+<img width="557" height="164" alt="Screenshot 2026-04-17 at 5 16 03 PM" src="https://github.com/user-attachments/assets/d4192b52-914b-4ec7-8908-9b7782bf4877" />
 
 ### Screenshot 2B — Raw Tree Object (xxd)
 
-> **Place screenshot here:** Run the commands below to find a tree object and display its raw binary format.
+><img width="1417" height="333" alt="Screenshot 2026-04-17 at 6 05 37 PM" src="https://github.com/user-attachments/assets/68e704e0-42d5-47ff-9ee4-653175cf199d" />
 
 **Commands to generate this screenshot:**
 ```bash
@@ -89,15 +90,14 @@ xxd .pes/objects/XX/YYYY... | head -20
 
 ### Screenshot 3A — init → add → status
 
-> **Place screenshot here:** Sequence of `./pes init`, `./pes add file1.txt file2.txt`, `./pes status` showing staged files.
+> <img width="818" height="752" alt="Screenshot 2026-04-17 at 5 26 15 PM" src="https://github.com/user-attachments/assets/5d4cb039-f8a4-469b-a1ca-793c8ff8896f" />
 
 ![Status Output](screenshots/3A_pes_status.png)
 
 ### Screenshot 3B — Index File Contents
 
-> **Place screenshot here:** `cat .pes/index` showing two entries with mode, hash, mtime, size, and filename.
+> <img width="722" height="140" alt="Screenshot 2026-04-17 at 5 26 49 PM" src="https://github.com/user-attachments/assets/67f1f263-4e3a-459b-9852-3bc999bf7a7f" />
 
-![Index Contents](screenshots/3B_cat_index.png)
 
 ---
 
@@ -112,25 +112,29 @@ xxd .pes/objects/XX/YYYY... | head -20
 
 ### Screenshot 4A — pes log (Three Commits)
 
-> **Place screenshot here:** `./pes log` output showing three commits with full hashes, Author, Date, and messages.
+><img width="813" height="738" alt="Screenshot 2026-04-17 at 5 39 53 PM" src="https://github.com/user-attachments/assets/874bb0fd-ca99-4ad8-a49e-af18223f54af" />
+
 
 ![Log Output](screenshots/4A_pes_log.png)
 
 ### Screenshot 4B — Object Store Growth
 
-> **Place screenshot here:** `find .pes -type f | sort` after three commits, showing blobs, trees, commits, HEAD, index, and refs.
+> <img width="841" height="296" alt="Screenshot 2026-04-17 at 5 40 58 PM" src="https://github.com/user-attachments/assets/8ac116a2-b96f-4bef-b5f4-be9608017781" />
 
 ![Object Store](screenshots/4B_find_pes.png)
 
 ### Screenshot 4C — Reference Chain
 
-> **Place screenshot here:** `cat .pes/refs/heads/main` (commit hash) and `cat .pes/HEAD` (`ref: refs/heads/main`).
+> <img width="692" height="133" alt="Screenshot 2026-04-17 at 5 41 55 PM" src="https://github.com/user-attachments/assets/b2f7fcf1-9af1-40f8-bb2d-d13f36bf401d" />
+
 
 ![Reference Chain](screenshots/4C_refs.png)
 
 ### Screenshot — Full Integration Test
 
-> **Place screenshot here:** `make test-integration` output showing all integration test sections passing and "All integration tests completed."
+><img width="1083" height="843" alt="Screenshot 2026-04-17 at 5 43 21 PM" src="https://github.com/user-attachments/assets/badd50e6-4bd8-468d-b256-8146ed1f51a4" />
+
+><img width="1077" height="819" alt="Screenshot 2026-04-17 at 5 42 40 PM" src="https://github.com/user-attachments/assets/9e5d039c-655c-47d8-a2cb-d8b8021e02ff" />
 
 ![Integration Test](screenshots/integration_test.png)
 
