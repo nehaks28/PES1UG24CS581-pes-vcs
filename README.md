@@ -234,44 +234,5 @@ The core principle is: **never delete an object that was written after the GC's 
 
 ---
 
-## Submission Checklist
 
-| Phase | ID | Screenshot | Status |
-|-------|----|------------|--------|
-| 1 | 1A | `./test_objects` all tests passing | ✅ |
-| 1 | 1B | `find .pes/objects -type f` sharded structure | ✅ |
-| 2 | 2A | `./test_tree` all tests passing | ✅ |
-| 2 | 2B | `xxd` of raw tree object (first 20 lines) | ⬜ **(pending — see Phase 2 instructions above)** |
-| 3 | 3A | `pes init → pes add → pes status` | ✅ |
-| 3 | 3B | `cat .pes/index` | ✅ |
-| 4 | 4A | `pes log` with three commits | ✅ |
-| 4 | 4B | `find .pes -type f \| sort` object growth | ✅ |
-| 4 | 4C | `cat .pes/refs/heads/main` + `cat .pes/HEAD` | ✅ |
-| Final | — | `make test-integration` all passed | ✅ |
-
----
-
-## How to Place Screenshots
-
-Create a `screenshots/` folder in the root of your repository and name files exactly as referenced in this README:
-
-```
-screenshots/
-├── 1A_test_objects.png
-├── 1B_find_objects.png
-├── 2A_test_tree.png
-├── 2B_xxd_tree.png        ← still needed
-├── 3A_pes_status.png
-├── 3B_cat_index.png
-├── 4A_pes_log.png
-├── 4B_find_pes.png
-├── 4C_refs.png
-└── integration_test.png
-```
-
-Then commit:
-```bash
-git add screenshots/ README.md
-git commit -m "Add lab report with all screenshots"
-git push
 ```
