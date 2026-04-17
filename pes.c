@@ -1,4 +1,4 @@
-// pes.c — CLI entry point and command dispatch
+// pes.c \u2014 CLI entry point and command dispatch
 //
 // This file is PROVIDED. Do not modify.
 
@@ -11,7 +11,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-// ─── PROVIDED: Command Implementations ──────────────────────────────────────
+// \u2500\u2500\u2500 PROVIDED: Command Implementations \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 // Usage: pes init
 void cmd_init(void) {
@@ -101,7 +101,7 @@ void cmd_log(void) {
     }
 }
 
-// ─── PROVIDED: Command dispatch ─────────────────────────────────────────────
+// \u2500\u2500\u2500 PROVIDED: Command dispatch \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
